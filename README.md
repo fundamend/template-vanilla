@@ -1,52 +1,22 @@
-# config-stylelint
+# template-vanilla
 
-_config-stylelint_ is a configuration preset for [stylelint] used by the [fundamend.dev] ecosystem.
-
-## Installation
-
-Use your favorite Node.js package manager, for example [npm], like so:
-
-    npm install --save-dev @fundamend/config-stylelint
-
-... or [yarn], like so:
-
-    yarn add --dev @fundamend/config-stylelint
+_template-vanilla_ is a template for a vanilla HTML5 + CSS3 + JavaScript web page for the [fundamend.dev] ecosystem.
 
 ## Usage
 
-In your [.stylelintrc.js], import _config-stylelint_ and spread it into the exported object, like so:
+Clone this repository and start editing the source files.
+Use the following commands:
 
-```js
-const fundamend = require('@fundamend/config-stylelint');
-
-module.exports = {
-	...fundamend,
-};
-```
-
-You can extend the imported preset by adding additional [configuration options] to the exported configuration object, for example like this:
-
-```js
-const fundamend = require('@fundamend/config-stylelint');
-
-module.exports = {
-	...fundamend,
-	rules: {
-		'color-hex-case': 'upper',
-	},
-};
-```
-
-Settings that already exist in the configuration preset will be overwritten.
+- `yarn dev` to start the development server
+- `yarn prod`to build a production build
+- `yarn lint` to lint all files
+- `yarn lint:fix` to automatically fix lint errors
+- `yarn clean` to clean temporary files
+- `yarn clean:all` to clean all files that are not part of the repository
 
 ## License
 
 [MIT]
 
-[configuration options]: https://stylelint.io/user-guide/rules/list
 [fundamend.dev]: https://fundamend.dev
 [mit]: https://choosealicense.com/licenses/mit/
-[npm]: https://www.npmjs.com/
-[stylelint]: https://stylelint.io/
-[.stylelintrc.js]: https://stylelint.io/user-guide/configure
-[yarn]: https://yarnpkg.com/
