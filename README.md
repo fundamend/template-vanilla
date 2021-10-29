@@ -8,7 +8,8 @@ Clone this repository and start editing the source files.
 Use the following commands:
 
 - `yarn dev` to start the development server
-- `yarn prod`to build a production build
+- `yarn prod` to build a production build
+- `yarn prod:preview` to preview the production build
 - `yarn lint` to lint all files
 - `yarn lint:fix` to automatically fix lint errors
 - `yarn clean` to clean temporary files

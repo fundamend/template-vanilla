@@ -1,1 +1,1 @@
-alert('Hello World!');
+import '@fundamend/components-layout';

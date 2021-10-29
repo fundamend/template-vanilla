@@ -1,3 +1,11 @@
-body {
-	color: green;
+@import '@fundamend/css';
+@import '@fundamend/css-theme-playful';
+
+#logo {
+	width: 256px;
+	height: 256px;
+}
+
+fundamend-center {
+	height: 100%;
 }
